@@ -1,1 +1,2 @@
-# Baby-Shower-App
+# BabyShower
+Baby Shower Invite Page
