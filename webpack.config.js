@@ -1,7 +1,7 @@
 module.exports = {
     
       // This is the entry point or start of our react applicaton
-      entry: "./app/app.js",
+      entry: "./app/App.js",
     
       // The plain compiled Javascript will be output into this file
       output: {
@@ -20,7 +20,7 @@ module.exports = {
             loader: "babel",
             query: {
               // These are the specific transformations we'll be using.
-              presets: ["react", "es2015", "stage-2"]
+              presets: ["react", "env", "stage-2"]
             }
           }
         ]
