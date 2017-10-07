@@ -67,7 +67,8 @@ p, a {
     width:25%; 
 }
 footer {
-    line-height: 2; 
     font-family: "Satisfy", cursive; 
     color: white;
+    padding-top: 3px;
+    padding-bottom: 3px;
 }
