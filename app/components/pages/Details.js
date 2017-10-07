@@ -2,8 +2,8 @@ import React from "react";
 
 const Details =  () => 
 <div>
-    <div className="w3-container w3-center w3-wide w3-display-middle bgimg2 padding-300">
-            <h1 className="w3-jumbo w3-center w3-text-black"><b>The Shower</b></h1>
+    <div className="w3-container w3-center w3-wide w3-display-middle bgimg2 padding-200">
+            <h1 className="w3-center w3-text-black"><b>The Shower</b></h1>
             <h3> Hosted by Sister-in-Law</h3>
             <div className="w3-row">
                 <div className="w3-half">

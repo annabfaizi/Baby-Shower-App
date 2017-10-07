@@ -9,7 +9,7 @@ const Rsvp =  (props) => {
     return (
         <div>
             <div className="w3-container w3-center w3-wide bgimg w3-display-middle padding-200">
-                    <h1>HOPE YOU CAN MAKE IT!</h1>
+                    <h2>HOPE YOU CAN MAKE IT!</h2>
 
                     <h3 >Kindly Respond By August 31st 2017</h3>
                     <div className="w3-content">

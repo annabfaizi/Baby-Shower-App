@@ -1,7 +1,24 @@
-h1,h2,h3{
+h1{
     font-family: "Dancing Script", cursive; 
     color: black;
     text-align: center;
+    font-size: 90px;
+    font-weight: 700;
+}
+h2{
+    font-family: "Dancing Script", cursive; 
+    color: black;
+    text-align: center;
+    font-size: 55px;
+    font-weight: 700;
+    line-height: 1;
+}
+h3{
+    font-family: "Dancing Script", cursive; 
+    color: black;
+    text-align: center;
+    font-size: 28px;
+    line-height: 1.5;
 }
 body, html {
     height: 100%;

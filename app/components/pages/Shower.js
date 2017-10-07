@@ -2,8 +2,8 @@ import React from "react";
 
 const Shower =  () => 
 <div>
-    <div className="w3-container w3-center w3-wide w3-display-middle bgimg2 w3-text-black padding-300">
-            <h1 className="w3-jumbo w3-center w3-text-black"><b>Baby Shower</b></h1>
+    <div className="w3-container w3-center w3-wide w3-display-middle bgimg2 w3-text-black padding-200">
+            <h1 className="w3-center w3-text-black"><b>Baby Shower</b></h1>
                 <h3>
                 Twinkle, twinkle, tiny light <br />
                 Little eyes that shine so bright <br />
