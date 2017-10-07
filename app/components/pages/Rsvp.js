@@ -27,23 +27,33 @@ class Rsvp extends Component {
     handleButtonClickY() {
         const newName = this.state.inputNameValue;
         const newNum = this.state.inputNumValue;
-
+        
+        let rsvp = {
+            name: newName,
+            party: newNum,
+            attending: true
+        }
         console.log("name: " + newName + ", Number of guests coming: " + newNum );
 
-        API.saveRsvpY(newName, newNum);
-        this.setState({ inputNameValue: {newName} });
-        this.setState({ inputNumValue: {newNum} });  
+        API.saveRsvp(rsvp);
+        this.setState({ inputNameValue: "" });
+        this.setState({ inputNumValue: "" });  
     }
 
     handleButtonClickN() {
         const newName = this.state.inputNameValue;
         const newNum = this.state.inputNumValue;
-
+        
+        let rsvp = {
+            name: newName,
+            party: newNum,
+            attending: false
+        }
         console.log("name: " + newName + ", Number of guests not coming: " + newNum );
 
-        API.saveRsvpN(newName, newNum);
-        this.setState({ inputNameValue: {newName} });
-        this.setState({ inputNumValue: {newNum} });
+        API.saveRsvp(rsvp);
+        this.setState({ inputNameValue: "" });
+        this.setState({ inputNumValue: "" });
     }
  
     render() {          

@@ -16,8 +16,7 @@ const Details =  () =>
                 </div>
                 <div>
                 <h2><b>Registry</b></h2>
-                <h3>The expecting couple is registered at Babies R' Us,</h3>
-                <h3> please click 
+                <h3>The expecting couple is registered at Babies R' Us, please click 
                     <a href="https://babyregistry.toysrus.com/search?camp=ppc%253aBrand%253a6793&gsidynamic=googleadwords_msnadcenter_brus-_-sitelink-_-sitelink-_-sitelink&gclid=CjwKEAjwsNfOBRCWl_HevZSJ2i0SJABiE2qWMQley9Opxvqd9cBAYLpPJLABKuWkejmhr6Tftid3nBoCcmHw_wcB" 
                     target="_blank" className="w3-hover-text-green"> here</a>.
                 </h3>

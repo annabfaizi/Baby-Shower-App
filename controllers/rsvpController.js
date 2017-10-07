@@ -19,16 +19,19 @@ module.exports = {
   },
   // This method handles creating new rsvp
   create: function(req, res) {
-    var newRsvp = new Rsvp({
-      name: req.body.name,
-      partyOf: req.body.party
-    });
-    console.log("we got here " + req.body.name);
-    newRsvp.create(function(err) {
+    console.log(JSON.stringify(req.body, null, 2));
+
+    let newRsvp = new Rsvp(req.body);
+
+    newRsvp.save((err,doc) => {
       if (err) {
-        return res.send(err);
+        console.log("Error: ", err);
+        res.send(err);
+      } else {
+        console.log("Rsvp added", JSON.stringify(newRsvp, null, 2));
+        // Or send the newdoc to the browser
+        res.json(newRsvp);
       }
-      res.json(newRsvp);
     });
   },
   // This method handles deleting rsvp

@@ -5,9 +5,10 @@ var Schema = mongoose.Schema;
 
 var rsvpSchema = new Schema({
   name: String,
-  partyOf: String,
+  party: String,
   attending: {
-    type: Boolean
+    type: Boolean,
+    default: false
   },
   rsvpDate: {
 	  type: Date,
@@ -15,6 +16,6 @@ var rsvpSchema = new Schema({
   }
 });
 
-var Rsvp = mongoose.model("rsvp", rsvpSchema);
+var Rsvp = mongoose.model("RSVP", rsvpSchema);
 
 module.exports = Rsvp;
