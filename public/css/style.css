@@ -22,10 +22,11 @@ p, a {
     background-size: cover;
 }
 .bgimg2 {
-    background-image: url("./images/flower-wallpaper2 clear.png");
+    background-image: url("./images/flower-wallpaper2 clear.png");;
     min-height: 100%;
     min-width: 100%;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: repeat-x;
 }
 .w3-bar-item {
     text-align:center;
