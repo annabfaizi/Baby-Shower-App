@@ -2,20 +2,27 @@ import axios from "axios";
 
 const API = {
   //save rsvp to db
-  saveRsvpY: function(rsvp) {
+  saveRsvpY: function(name, party) {
+    console.log("In API.js >>>>>>> name: "+ name);
+    console.log("party of: " +party);
+    
     var newRsvp = {
-      name: rsvp.name,
-      party: rsvp.party,
+      name: name,
+      partyOf: party,
       attending: true
     }
-    return axios.post("/api/rsvp");
+    console.log(newRsvp);
+    return axios.post("/api/rsvp", { newRsvp });
   },
-  saveRsvpN: function(rsvp) {
+  saveRsvpN: function(name, party) {
+    console.log("In API.js >>>>>>> name: "+ name);
+    console.log("party of: " +party);
     var newRsvp = {
-      name: rsvp.name,
-      party: rsvp.party,
+      name: name,
+      partyOf: party,
       attending: false
     }
+    console.log(newRsvp);
     return axios.post("/api/rsvp");
   },
   // Retrieves all rsvp from the db
