@@ -66,6 +66,12 @@ p, a {
 .nav-btn-width {
     width:25%; 
 }
+input[type=text] {
+    border-radius: 6px;
+}
+button[type=submit] {
+    border-radius: 6px;
+}
 footer {
     font-family: "Satisfy", cursive; 
     color: white;
